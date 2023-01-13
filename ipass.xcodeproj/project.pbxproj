@@ -14,6 +14,19 @@
 		F5D7241F296D6EED00D52538 /* ipassTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D7241E296D6EED00D52538 /* ipassTests.swift */; };
 		F5D72429296D6EED00D52538 /* ipassUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D72428296D6EED00D52538 /* ipassUITests.swift */; };
 		F5D7242B296D6EED00D52538 /* ipassUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D7242A296D6EED00D52538 /* ipassUITestsLaunchTests.swift */; };
+		F5D72445296D7E7C00D52538 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D72444296D7E7C00D52538 /* PageView.swift */; };
+		F5D72447296D8FAC00D52538 /* Carousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D72446296D8FAC00D52538 /* Carousel.swift */; };
+		F5D7244A296D90DE00D52538 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D72449296D90DE00D52538 /* User.swift */; };
+		F5D7244E296EA9FA00D52538 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D7244D296EA9FA00D52538 /* HomePage.swift */; };
+		F5D72450296EAA4500D52538 /* MyAccountCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D7244F296EAA4500D52538 /* MyAccountCard.swift */; };
+		F5D72457296EADE700D52538 /* ColorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D72456296EADE700D52538 /* ColorExt.swift */; };
+		F5D7245B296EC36000D52538 /* HomeIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D7245A296EC36000D52538 /* HomeIcon.swift */; };
+		F5D7245D296ECABE00D52538 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D7245C296ECABE00D52538 /* View.swift */; };
+		F5D72460296FAE4700D52538 /* IndexBottomBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D7245F296FAE4700D52538 /* IndexBottomBar.swift */; };
+		F5D72464296FC1D000D52538 /* IndexContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D72463296FC1D000D52538 /* IndexContainer.swift */; };
+		F5D72466296FEB2500D52538 /* IPassCardPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D72465296FEB2500D52538 /* IPassCardPage.swift */; };
+		F5D72468296FEB5D00D52538 /* TopAppBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D72467296FEB5D00D52538 /* TopAppBar.swift */; };
+		F5D7246A2971398900D52538 /* BannerPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D724692971398900D52538 /* BannerPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +57,19 @@
 		F5D72424296D6EED00D52538 /* ipassUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ipassUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5D72428296D6EED00D52538 /* ipassUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ipassUITests.swift; sourceTree = "<group>"; };
 		F5D7242A296D6EED00D52538 /* ipassUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ipassUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F5D72444296D7E7C00D52538 /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
+		F5D72446296D8FAC00D52538 /* Carousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Carousel.swift; sourceTree = "<group>"; };
+		F5D72449296D90DE00D52538 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F5D7244D296EA9FA00D52538 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
+		F5D7244F296EAA4500D52538 /* MyAccountCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountCard.swift; sourceTree = "<group>"; };
+		F5D72456296EADE700D52538 /* ColorExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExt.swift; sourceTree = "<group>"; };
+		F5D7245A296EC36000D52538 /* HomeIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeIcon.swift; sourceTree = "<group>"; };
+		F5D7245C296ECABE00D52538 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		F5D7245F296FAE4700D52538 /* IndexBottomBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexBottomBar.swift; sourceTree = "<group>"; };
+		F5D72463296FC1D000D52538 /* IndexContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexContainer.swift; sourceTree = "<group>"; };
+		F5D72465296FEB2500D52538 /* IPassCardPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPassCardPage.swift; sourceTree = "<group>"; };
+		F5D72467296FEB5D00D52538 /* TopAppBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopAppBar.swift; sourceTree = "<group>"; };
+		F5D724692971398900D52538 /* BannerPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +120,10 @@
 		F5D7240C296D6EEC00D52538 /* ipass */ = {
 			isa = PBXGroup;
 			children = (
+				F5D72454296EADC800D52538 /* utils */,
+				F5D72451296EACEC00D52538 /* constants */,
+				F5D7244B296EA9AA00D52538 /* ui */,
+				F5D72448296D90D100D52538 /* model */,
 				F5D7240D296D6EEC00D52538 /* ipassApp.swift */,
 				F5D7240F296D6EEC00D52538 /* ContentView.swift */,
 				F5D72411296D6EED00D52538 /* Assets.xcassets */,
@@ -127,6 +157,87 @@
 			path = ipassUITests;
 			sourceTree = "<group>";
 		};
+		F5D72443296D7E6F00D52538 /* components */ = {
+			isa = PBXGroup;
+			children = (
+				F5D72462296FC1A300D52538 /* containers */,
+				F5D7245E296FADE500D52538 /* indexBottomBar */,
+				F5D72444296D7E7C00D52538 /* PageView.swift */,
+				F5D72446296D8FAC00D52538 /* Carousel.swift */,
+				F5D7244F296EAA4500D52538 /* MyAccountCard.swift */,
+				F5D7245A296EC36000D52538 /* HomeIcon.swift */,
+				F5D72467296FEB5D00D52538 /* TopAppBar.swift */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
+		F5D72448296D90D100D52538 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				F5D72449296D90DE00D52538 /* User.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		F5D7244B296EA9AA00D52538 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				F5D7244C296EA9B300D52538 /* views */,
+				F5D72443296D7E6F00D52538 /* components */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		F5D7244C296EA9B300D52538 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				F5D7244D296EA9FA00D52538 /* HomePage.swift */,
+				F5D72465296FEB2500D52538 /* IPassCardPage.swift */,
+				F5D724692971398900D52538 /* BannerPage.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		F5D72451296EACEC00D52538 /* constants */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = constants;
+			sourceTree = "<group>";
+		};
+		F5D72454296EADC800D52538 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				F5D72455296EADD300D52538 /* extension */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		F5D72455296EADD300D52538 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				F5D72456296EADE700D52538 /* ColorExt.swift */,
+				F5D7245C296ECABE00D52538 /* View.swift */,
+			);
+			path = extension;
+			sourceTree = "<group>";
+		};
+		F5D7245E296FADE500D52538 /* indexBottomBar */ = {
+			isa = PBXGroup;
+			children = (
+				F5D7245F296FAE4700D52538 /* IndexBottomBar.swift */,
+			);
+			path = indexBottomBar;
+			sourceTree = "<group>";
+		};
+		F5D72462296FC1A300D52538 /* containers */ = {
+			isa = PBXGroup;
+			children = (
+				F5D72463296FC1D000D52538 /* IndexContainer.swift */,
+			);
+			path = containers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +254,8 @@
 			dependencies = (
 			);
 			name = ipass;
+			packageProductDependencies = (
+			);
 			productName = ipass;
 			productReference = F5D7240A296D6EEC00D52538 /* ipass.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +328,8 @@
 				Base,
 			);
 			mainGroup = F5D72401296D6EEC00D52538;
+			packageReferences = (
+			);
 			productRefGroup = F5D7240B296D6EEC00D52538 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -258,7 +373,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5D72410296D6EEC00D52538 /* ContentView.swift in Sources */,
+				F5D72468296FEB5D00D52538 /* TopAppBar.swift in Sources */,
+				F5D7244E296EA9FA00D52538 /* HomePage.swift in Sources */,
+				F5D7245D296ECABE00D52538 /* View.swift in Sources */,
+				F5D72466296FEB2500D52538 /* IPassCardPage.swift in Sources */,
+				F5D72445296D7E7C00D52538 /* PageView.swift in Sources */,
+				F5D72460296FAE4700D52538 /* IndexBottomBar.swift in Sources */,
+				F5D72457296EADE700D52538 /* ColorExt.swift in Sources */,
+				F5D7245B296EC36000D52538 /* HomeIcon.swift in Sources */,
 				F5D7240E296D6EEC00D52538 /* ipassApp.swift in Sources */,
+				F5D7246A2971398900D52538 /* BannerPage.swift in Sources */,
+				F5D72450296EAA4500D52538 /* MyAccountCard.swift in Sources */,
+				F5D7244A296D90DE00D52538 /* User.swift in Sources */,
+				F5D72464296FC1D000D52538 /* IndexContainer.swift in Sources */,
+				F5D72447296D8FAC00D52538 /* Carousel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +552,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,6 +581,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

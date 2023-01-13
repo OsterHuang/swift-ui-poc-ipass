@@ -8,14 +8,22 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var tabIndex: Int = 2
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        // Use ZStack, overlay to hide the tabview bottomTabBar
+        ZStack {
+            TabView(selection: $tabIndex) {
+                HomePage()
+                    .tag(2)
+                IPassCardPage(tabIndex: $tabIndex)
+//                    .onBack { }
+                    .tag(0)
+                    
+            }
         }
-        .padding()
+        .overlay(IndexBottomBar(selection: $tabIndex), alignment: .bottom)
     }
 }
 
