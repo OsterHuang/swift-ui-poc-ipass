@@ -27,6 +27,7 @@
 		F5D72466296FEB2500D52538 /* IPassCardPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D72465296FEB2500D52538 /* IPassCardPage.swift */; };
 		F5D72468296FEB5D00D52538 /* TopAppBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D72467296FEB5D00D52538 /* TopAppBar.swift */; };
 		F5D7246A2971398900D52538 /* BannerPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D724692971398900D52538 /* BannerPage.swift */; };
+		F5D7246C2971671200D52538 /* NavigationUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D7246B2971671200D52538 /* NavigationUtil.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		F5D72465296FEB2500D52538 /* IPassCardPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPassCardPage.swift; sourceTree = "<group>"; };
 		F5D72467296FEB5D00D52538 /* TopAppBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopAppBar.swift; sourceTree = "<group>"; };
 		F5D724692971398900D52538 /* BannerPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerPage.swift; sourceTree = "<group>"; };
+		F5D7246B2971671200D52538 /* NavigationUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationUtil.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,6 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				F5D72455296EADD300D52538 /* extension */,
+				F5D7246B2971671200D52538 /* NavigationUtil.swift */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -385,6 +388,7 @@
 				F5D7246A2971398900D52538 /* BannerPage.swift in Sources */,
 				F5D72450296EAA4500D52538 /* MyAccountCard.swift in Sources */,
 				F5D7244A296D90DE00D52538 /* User.swift in Sources */,
+				F5D7246C2971671200D52538 /* NavigationUtil.swift in Sources */,
 				F5D72464296FC1D000D52538 /* IndexContainer.swift in Sources */,
 				F5D72447296D8FAC00D52538 /* Carousel.swift in Sources */,
 			);
