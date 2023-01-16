@@ -11,41 +11,42 @@ struct HomePage: View {
     
     
     var body: some View {
-        
-        ScrollView {
-            VStack(spacing: 0) {
-                // Top App Bar
-                HStack {
-                    Image("logo_ipass_home").resizable().frame(width: 170, height: 32)
-                    Spacer()
-                    Image("ic_alert")
+        IndexContainer {
+            ScrollView {
+                VStack(spacing: 0) {
+                    // Top App Bar
+                    HStack {
+                        Image("logo_ipass_home").resizable().frame(width: 170, height: 32)
+                        Spacer()
+                        Image("ic_alert")
+                    }
+                    .padding(.horizontal, 20)
+                    .padding(.bottom, -6)
+                    
+                    // Account Card
+                    VStack {
+                        MyAccountCard()
+                            .padding(.horizontal, 20)
+                    }
+                    .frame(height: 236)
+                    .background(
+                        Image("bg_account_card")
+                            .resizable()
+                            .scaledToFill()
+                    )
+                    
+                    // Main Function
+                    HStack {
+                        HomeLargeIcon(imageName: "ic_payment_code", label: "付款碼", labelColor: Color.gray800)
+                        HomeLargeIcon(imageName: "ic_transfer", label: "付款碼", labelColor: Color.gray800)
+                        HomeLargeIcon(imageName: "ic_vehicle_code", label: "乘車碼", labelColor: Color.gray800)
+                    }
+                    .padding(.bottom, 16)
+                    
+                    // Life Payment
+                    HomeLifePayment()
+                    
                 }
-                .padding(.horizontal, 20)
-                .padding(.bottom, -6)
-                
-                // Account Card
-                VStack {
-                    MyAccountCard()
-                        .padding(.horizontal, 20)
-                }
-                .frame(height: 236)
-                .background(
-                    Image("bg_account_card")
-                        .resizable()
-                        .scaledToFill()
-                )
-                
-                // Main Function
-                HStack {
-                    HomeLargeIcon(imageName: "ic_payment_code", label: "付款碼", labelColor: Color.gray800)
-                    HomeLargeIcon(imageName: "ic_transfer", label: "付款碼", labelColor: Color.gray800)
-                    HomeLargeIcon(imageName: "ic_vehicle_code", label: "乘車碼", labelColor: Color.gray800)
-                }
-                .padding(.bottom, 16)
-                
-                // Life Payment
-                HomeLifePayment()
-                
             }
         }
         .background(

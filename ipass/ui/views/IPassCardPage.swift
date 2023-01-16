@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct IPassCardPage: View {
-    @Binding var tabIndex: Int
+//    @Binding var tabIndex: Int
     
     var fieldRows = [
         FieldRow(label:"連結一卡通儲值卡", icon: "ic_m_i_pass_manage"),
@@ -26,8 +26,10 @@ struct IPassCardPage: View {
             VStack(spacing: 16) {
                 ForEach(fieldRows, id: \.label) { row in
                     HStack {
-                        Image(row.icon).resizable().frame(width: 32, height: 32)
-                        Text(row.label).foregroundColor(Color.gray800)
+                        Image(row.icon).resizable().frame(width: 24, height: 24)
+                        Text(row.label)
+                            .font(.subheadline)
+                            .foregroundColor(Color.gray800)
                         Spacer()
                         Image("ic_arrowleft_default")
                             .rotationEffect(Angle(degrees: 180))

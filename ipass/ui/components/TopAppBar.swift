@@ -8,17 +8,18 @@
 import SwiftUI
 
 struct TopAppBar<Content: View, ActionBtn: View>: View {
+    @Environment(\.presentationMode) var presentationMode
+    
     var isShowNavBack: Bool
     var title: () -> Content
     var actionBtn: (() -> ActionBtn)?
-    var onBack = {}
     
     var body: some View {
         VStack(spacing: 0) {
             HStack {
                 if (isShowNavBack) {
                     Button {
-                        onBack()
+                        self.presentationMode.wrappedValue.dismiss()
                     } label: {
                         Image("ic_arrowleft_default")
                     }
@@ -41,7 +42,7 @@ struct TopAppBar<Content: View, ActionBtn: View>: View {
             
             
             LinearGradient(
-                colors: [Color(hex: "#e0e0e0"), Color("#e5e5ea")],
+                colors: [Color(hex: "#e0e0e0"), Color(hex: "#e5e5ea")],
                 startPoint: .top, endPoint: .bottom
             )
                .frame(height: 2)

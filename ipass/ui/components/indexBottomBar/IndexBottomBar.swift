@@ -4,31 +4,37 @@
 //
 //  Created by Oster Huang on 12/01/2023.
 //
-
 import SwiftUI
 
+
 struct IndexBottomBar: View {
-    @Binding var selection: Int
+    @EnvironmentObject var navigation : IndexBottomNavigation
     
     var body: some View {
+        let _ = print("Update bottom index - \($navigation.actvatedTab)")
+        
         // ZStack層是為了首頁的頭可以超過上方
         ZStack {
             HStack {
-                Button {
-                    selection = 0
-                } label: {
+                NavigationLink (
+                    destination: IPassCardPage(),
+                    tag: "IPassCardPage",
+                    selection: $navigation.actvatedTab)
+                {
                     HomeMidIcon(imageName: "ic_index_ipass", label: "儲值卡", spacing: 5)
                 }
                 
-                Button {
-                    selection = 0
+                NavigationLink {
+                    IPassCardPage()
                 } label: {
                     HomeMidIcon(imageName: "ic_index_record", label: "帳戶記錄", spacing: 5)
                 }
                 
-                Button {
-                    selection = 2
-                } label: {
+                NavigationLink (
+                    destination: HomePage(),
+                    tag: "HomePage",
+                    selection: $navigation.actvatedTab)
+                {
                     VStack(spacing: 3) {
                         ZStack {
                             Circle()
@@ -60,12 +66,10 @@ struct IndexBottomBar: View {
 }
 
 struct IndexBottomBar_Previews: PreviewProvider {
-    @State static var selectedIndex: Int = 2
-    
     static var previews: some View {
         VStack {
             Spacer()
-            IndexBottomBar(selection: $selectedIndex)
+            IndexBottomBar().environmentObject(IndexBottomNavigation())
         }.background(Color.gray600)
     }
 }
