@@ -11,14 +11,12 @@ struct TopAppBar<Content: View, ActionBtn: View>: View {
     var isShowNavBack: Bool
     var title: () -> Content
     var actionBtn: (() -> ActionBtn)?
-    var onBack = {}
     
     var body: some View {
         VStack(spacing: 0) {
             HStack {
                 if (isShowNavBack) {
                     Button {
-                        onBack()
                     } label: {
                         Image("ic_arrowleft_default")
                     }
@@ -39,14 +37,19 @@ struct TopAppBar<Content: View, ActionBtn: View>: View {
             .frame(height: 44)
             .padding(.horizontal)
             
-            
-            LinearGradient(
-                colors: [Color(hex: "#e0e0e0"), Color("#e5e5ea")],
-                startPoint: .top, endPoint: .bottom
-            )
-               .frame(height: 2)
-               .padding(0)
+            TopAppBarShadow()
         }
+    }
+}
+
+struct TopAppBarShadow: View {
+    var body: some View {
+        LinearGradient(
+            colors: [Color(hex: "#e0e0e0"), Color("#e5e5ea")],
+            startPoint: .top, endPoint: .bottom
+        )
+        .frame(height: 2)
+        .padding(0)
     }
 }
 

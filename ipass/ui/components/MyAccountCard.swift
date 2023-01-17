@@ -33,7 +33,7 @@ struct MyAccountCard: View {
                     .foregroundColor(Color.gray600)
                     .font(.caption)
                 Spacer()
-                Image("ic_account_card_refresh")
+                Image("ic_account_card_login")
                     .resizable()
                     .frame(width: 32, height: 32)
                     .offset(x: 6)

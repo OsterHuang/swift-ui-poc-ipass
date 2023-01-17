@@ -8,22 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
-    
-    @State var tabIndex: Int = 2
+    @StateObject var appData: AppData = AppData(mainPageTabIndex: 2)
     
     var body: some View {
-        // Use ZStack, overlay to hide the tabview bottomTabBar
-        ZStack {
-            TabView(selection: $tabIndex) {
-                HomePage()
-                    .tag(2)
-                IPassCardPage(tabIndex: $tabIndex)
-//                    .onBack { }
-                    .tag(0)
-                    
-            }
-        }
-        .overlay(IndexBottomBar(selection: $tabIndex), alignment: .bottom)
+        MainPage(tabIndex: $appData.mainPageTabIndex)
     }
 }
 

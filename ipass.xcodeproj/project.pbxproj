@@ -28,6 +28,9 @@
 		F5D72468296FEB5D00D52538 /* TopAppBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D72467296FEB5D00D52538 /* TopAppBar.swift */; };
 		F5D7246A2971398900D52538 /* BannerPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D724692971398900D52538 /* BannerPage.swift */; };
 		F5D7246C2971671200D52538 /* NavigationUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D7246B2971671200D52538 /* NavigationUtil.swift */; };
+		F5D72471297553D500D52538 /* MainPageNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D72470297553D500D52538 /* MainPageNavBar.swift */; };
+		F5D72473297642B100D52538 /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D72472297642B100D52538 /* MainPage.swift */; };
+		F5D724762976447200D52538 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D724752976447200D52538 /* AppData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +75,9 @@
 		F5D72467296FEB5D00D52538 /* TopAppBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopAppBar.swift; sourceTree = "<group>"; };
 		F5D724692971398900D52538 /* BannerPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerPage.swift; sourceTree = "<group>"; };
 		F5D7246B2971671200D52538 /* NavigationUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationUtil.swift; sourceTree = "<group>"; };
+		F5D72470297553D500D52538 /* MainPageNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageNavBar.swift; sourceTree = "<group>"; };
+		F5D72472297642B100D52538 /* MainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
+		F5D724752976447200D52538 /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,12 +169,11 @@
 			isa = PBXGroup;
 			children = (
 				F5D72462296FC1A300D52538 /* containers */,
-				F5D7245E296FADE500D52538 /* indexBottomBar */,
 				F5D72444296D7E7C00D52538 /* PageView.swift */,
+				F5D72467296FEB5D00D52538 /* TopAppBar.swift */,
 				F5D72446296D8FAC00D52538 /* Carousel.swift */,
 				F5D7244F296EAA4500D52538 /* MyAccountCard.swift */,
 				F5D7245A296EC36000D52538 /* HomeIcon.swift */,
-				F5D72467296FEB5D00D52538 /* TopAppBar.swift */,
 			);
 			path = components;
 			sourceTree = "<group>";
@@ -176,7 +181,8 @@
 		F5D72448296D90D100D52538 /* model */ = {
 			isa = PBXGroup;
 			children = (
-				F5D72449296D90DE00D52538 /* User.swift */,
+				F5D72474297643B800D52538 /* schema */,
+				F5D724752976447200D52538 /* AppData.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -193,8 +199,8 @@
 		F5D7244C296EA9B300D52538 /* views */ = {
 			isa = PBXGroup;
 			children = (
-				F5D7244D296EA9FA00D52538 /* HomePage.swift */,
-				F5D72465296FEB2500D52538 /* IPassCardPage.swift */,
+				F5D72477297648FB00D52538 /* login */,
+				F5D7246F2975528300D52538 /* mainPage */,
 				F5D724692971398900D52538 /* BannerPage.swift */,
 			);
 			path = views;
@@ -225,20 +231,39 @@
 			path = extension;
 			sourceTree = "<group>";
 		};
-		F5D7245E296FADE500D52538 /* indexBottomBar */ = {
-			isa = PBXGroup;
-			children = (
-				F5D7245F296FAE4700D52538 /* IndexBottomBar.swift */,
-			);
-			path = indexBottomBar;
-			sourceTree = "<group>";
-		};
 		F5D72462296FC1A300D52538 /* containers */ = {
 			isa = PBXGroup;
 			children = (
 				F5D72463296FC1D000D52538 /* IndexContainer.swift */,
 			);
 			path = containers;
+			sourceTree = "<group>";
+		};
+		F5D7246F2975528300D52538 /* mainPage */ = {
+			isa = PBXGroup;
+			children = (
+				F5D7244D296EA9FA00D52538 /* HomePage.swift */,
+				F5D72465296FEB2500D52538 /* IPassCardPage.swift */,
+				F5D7245F296FAE4700D52538 /* IndexBottomBar.swift */,
+				F5D72470297553D500D52538 /* MainPageNavBar.swift */,
+				F5D72472297642B100D52538 /* MainPage.swift */,
+			);
+			path = mainPage;
+			sourceTree = "<group>";
+		};
+		F5D72474297643B800D52538 /* schema */ = {
+			isa = PBXGroup;
+			children = (
+				F5D72449296D90DE00D52538 /* User.swift */,
+			);
+			path = schema;
+			sourceTree = "<group>";
+		};
+		F5D72477297648FB00D52538 /* login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -380,13 +405,16 @@
 				F5D7244E296EA9FA00D52538 /* HomePage.swift in Sources */,
 				F5D7245D296ECABE00D52538 /* View.swift in Sources */,
 				F5D72466296FEB2500D52538 /* IPassCardPage.swift in Sources */,
+				F5D724762976447200D52538 /* AppData.swift in Sources */,
 				F5D72445296D7E7C00D52538 /* PageView.swift in Sources */,
 				F5D72460296FAE4700D52538 /* IndexBottomBar.swift in Sources */,
 				F5D72457296EADE700D52538 /* ColorExt.swift in Sources */,
 				F5D7245B296EC36000D52538 /* HomeIcon.swift in Sources */,
 				F5D7240E296D6EEC00D52538 /* ipassApp.swift in Sources */,
 				F5D7246A2971398900D52538 /* BannerPage.swift in Sources */,
+				F5D72473297642B100D52538 /* MainPage.swift in Sources */,
 				F5D72450296EAA4500D52538 /* MyAccountCard.swift in Sources */,
+				F5D72471297553D500D52538 /* MainPageNavBar.swift in Sources */,
 				F5D7244A296D90DE00D52538 /* User.swift in Sources */,
 				F5D7246C2971671200D52538 /* NavigationUtil.swift in Sources */,
 				F5D72464296FC1D000D52538 /* IndexContainer.swift in Sources */,
