@@ -7,11 +7,26 @@
 
 import SwiftUI
 
+
 struct ContentView: View {
-    @StateObject var appData: AppData = AppData(mainPageTabIndex: 2)
-    
+    @StateObject var appViewModel: AppViewModel = AppViewModel(mainPageTabIndex: 2)
+
     var body: some View {
-        MainPage(tabIndex: $appData.mainPageTabIndex)
+        
+        ZStack {
+            NavigationView {
+                MainPage(tabIndex: $appViewModel.mainPageTabIndex)
+            }.onAppear {
+                let appearance = UINavigationBarAppearance()
+                appearance.configureWithOpaqueBackground()
+                appearance.shadowColor = nil // or a custom tint color
+                appearance.shadowImage = UIImage(named: "shadow")
+                UINavigationBar.appearance().standardAppearance = appearance
+            }.environmentObject(appViewModel) // Exposed to global environment object
+
+            LoadingView(isShow: appViewModel.loadingCount > 0)
+        }
+            
     }
 }
 

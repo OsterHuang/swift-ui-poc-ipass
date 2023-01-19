@@ -8,12 +8,17 @@
 import SwiftUI
 
 extension Color {
+    static var green500 = Color(hex: "#58a500")
+    static var red500 = Color(hex: "#fc3d39")
+    
     static var white200 = Color(hex: "f3f3f3")
     
+    static var gray300 = Color(hex: "#d1d1d6")
+    static var gray500 = Color(hex: "#aeaeb2")
     static var gray600 = Color(hex: "#8e8e93")
     static var gray800 = Color(hex: "#2b2b2b")
     
-    static var green500 = Color(hex: "#58a500")
+    
     
     init(hex: String) {
         let hex = hex.trimmingCharacters(in: CharacterSet.alphanumerics.inverted)

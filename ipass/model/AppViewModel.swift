@@ -7,8 +7,9 @@
 
 import Foundation
 
-class AppData: ObservableObject {
-    @Published var mainPageTabIndex: Int
+class AppViewModel: ObservableObject {
+    @Published var mainPageTabIndex: Int = 2
+    @Published var loadingCount: Int = 0
     
     init(mainPageTabIndex: Int) {
         self.mainPageTabIndex = mainPageTabIndex

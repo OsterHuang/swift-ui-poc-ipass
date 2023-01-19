@@ -30,7 +30,17 @@
 		F5D7246C2971671200D52538 /* NavigationUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D7246B2971671200D52538 /* NavigationUtil.swift */; };
 		F5D72471297553D500D52538 /* MainPageNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D72470297553D500D52538 /* MainPageNavBar.swift */; };
 		F5D72473297642B100D52538 /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D72472297642B100D52538 /* MainPage.swift */; };
-		F5D724762976447200D52538 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D724752976447200D52538 /* AppData.swift */; };
+		F5D724762976447200D52538 /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D724752976447200D52538 /* AppViewModel.swift */; };
+		F5D7247A297650A500D52538 /* LoginPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D72479297650A500D52538 /* LoginPage.swift */; };
+		F5D7247C29765DA900D52538 /* TextFieldStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D7247B29765DA900D52538 /* TextFieldStyles.swift */; };
+		F5D7247E2976893900D52538 /* ButtonStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D7247D2976893900D52538 /* ButtonStyles.swift */; };
+		F5D724802976A74B00D52538 /* OldFriendPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D7247F2976A74B00D52538 /* OldFriendPage.swift */; };
+		F5D72482297787DA00D52538 /* LoginTwIdPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D72481297787DA00D52538 /* LoginTwIdPage.swift */; };
+		F5D724842977A58A00D52538 /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D724832977A58A00D52538 /* StringExt.swift */; };
+		F5D724862977A69A00D52538 /* LoginOtpPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D724852977A69A00D52538 /* LoginOtpPage.swift */; };
+		F5D7248A2977CE2900D52538 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D724892977CE2900D52538 /* LoginResponse.swift */; };
+		F5D7248C2977D17B00D52538 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D7248B2977D17B00D52538 /* LoginViewModel.swift */; };
+		F5D7248E2979257D00D52538 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D7248D2979257D00D52538 /* LoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,7 +87,17 @@
 		F5D7246B2971671200D52538 /* NavigationUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationUtil.swift; sourceTree = "<group>"; };
 		F5D72470297553D500D52538 /* MainPageNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageNavBar.swift; sourceTree = "<group>"; };
 		F5D72472297642B100D52538 /* MainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
-		F5D724752976447200D52538 /* AppData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
+		F5D724752976447200D52538 /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
+		F5D72479297650A500D52538 /* LoginPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPage.swift; sourceTree = "<group>"; };
+		F5D7247B29765DA900D52538 /* TextFieldStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldStyles.swift; sourceTree = "<group>"; };
+		F5D7247D2976893900D52538 /* ButtonStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyles.swift; sourceTree = "<group>"; };
+		F5D7247F2976A74B00D52538 /* OldFriendPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OldFriendPage.swift; sourceTree = "<group>"; };
+		F5D72481297787DA00D52538 /* LoginTwIdPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTwIdPage.swift; sourceTree = "<group>"; };
+		F5D724832977A58A00D52538 /* StringExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExt.swift; sourceTree = "<group>"; };
+		F5D724852977A69A00D52538 /* LoginOtpPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginOtpPage.swift; sourceTree = "<group>"; };
+		F5D724892977CE2900D52538 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		F5D7248B2977D17B00D52538 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		F5D7248D2979257D00D52538 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +128,7 @@
 		F5D72401296D6EEC00D52538 = {
 			isa = PBXGroup;
 			children = (
+				F5D7248B2977D17B00D52538 /* LoginViewModel.swift */,
 				F5D7240C296D6EEC00D52538 /* ipass */,
 				F5D7241D296D6EED00D52538 /* ipassTests */,
 				F5D72427296D6EED00D52538 /* ipassUITests */,
@@ -174,6 +195,9 @@
 				F5D72446296D8FAC00D52538 /* Carousel.swift */,
 				F5D7244F296EAA4500D52538 /* MyAccountCard.swift */,
 				F5D7245A296EC36000D52538 /* HomeIcon.swift */,
+				F5D7247B29765DA900D52538 /* TextFieldStyles.swift */,
+				F5D7247D2976893900D52538 /* ButtonStyles.swift */,
+				F5D7248D2979257D00D52538 /* LoadingView.swift */,
 			);
 			path = components;
 			sourceTree = "<group>";
@@ -182,7 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				F5D72474297643B800D52538 /* schema */,
-				F5D724752976447200D52538 /* AppData.swift */,
+				F5D724752976447200D52538 /* AppViewModel.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -227,6 +251,7 @@
 			children = (
 				F5D72456296EADE700D52538 /* ColorExt.swift */,
 				F5D7245C296ECABE00D52538 /* View.swift */,
+				F5D724832977A58A00D52538 /* StringExt.swift */,
 			);
 			path = extension;
 			sourceTree = "<group>";
@@ -254,6 +279,8 @@
 		F5D72474297643B800D52538 /* schema */ = {
 			isa = PBXGroup;
 			children = (
+				F5D724882977CD2E00D52538 /* response */,
+				F5D724872977CD2300D52538 /* request */,
 				F5D72449296D90DE00D52538 /* User.swift */,
 			);
 			path = schema;
@@ -262,8 +289,35 @@
 		F5D72477297648FB00D52538 /* login */ = {
 			isa = PBXGroup;
 			children = (
+				F5D724782976509000D52538 /* first */,
 			);
 			path = login;
+			sourceTree = "<group>";
+		};
+		F5D724782976509000D52538 /* first */ = {
+			isa = PBXGroup;
+			children = (
+				F5D72479297650A500D52538 /* LoginPage.swift */,
+				F5D7247F2976A74B00D52538 /* OldFriendPage.swift */,
+				F5D72481297787DA00D52538 /* LoginTwIdPage.swift */,
+				F5D724852977A69A00D52538 /* LoginOtpPage.swift */,
+			);
+			path = first;
+			sourceTree = "<group>";
+		};
+		F5D724872977CD2300D52538 /* request */ = {
+			isa = PBXGroup;
+			children = (
+				F5D724892977CE2900D52538 /* LoginResponse.swift */,
+			);
+			path = request;
+			sourceTree = "<group>";
+		};
+		F5D724882977CD2E00D52538 /* response */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = response;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -405,20 +459,30 @@
 				F5D7244E296EA9FA00D52538 /* HomePage.swift in Sources */,
 				F5D7245D296ECABE00D52538 /* View.swift in Sources */,
 				F5D72466296FEB2500D52538 /* IPassCardPage.swift in Sources */,
-				F5D724762976447200D52538 /* AppData.swift in Sources */,
+				F5D724762976447200D52538 /* AppViewModel.swift in Sources */,
+				F5D72482297787DA00D52538 /* LoginTwIdPage.swift in Sources */,
 				F5D72445296D7E7C00D52538 /* PageView.swift in Sources */,
 				F5D72460296FAE4700D52538 /* IndexBottomBar.swift in Sources */,
+				F5D7247A297650A500D52538 /* LoginPage.swift in Sources */,
 				F5D72457296EADE700D52538 /* ColorExt.swift in Sources */,
+				F5D7248A2977CE2900D52538 /* LoginResponse.swift in Sources */,
+				F5D724862977A69A00D52538 /* LoginOtpPage.swift in Sources */,
 				F5D7245B296EC36000D52538 /* HomeIcon.swift in Sources */,
 				F5D7240E296D6EEC00D52538 /* ipassApp.swift in Sources */,
+				F5D7247E2976893900D52538 /* ButtonStyles.swift in Sources */,
 				F5D7246A2971398900D52538 /* BannerPage.swift in Sources */,
 				F5D72473297642B100D52538 /* MainPage.swift in Sources */,
 				F5D72450296EAA4500D52538 /* MyAccountCard.swift in Sources */,
 				F5D72471297553D500D52538 /* MainPageNavBar.swift in Sources */,
+				F5D7248C2977D17B00D52538 /* LoginViewModel.swift in Sources */,
 				F5D7244A296D90DE00D52538 /* User.swift in Sources */,
+				F5D724842977A58A00D52538 /* StringExt.swift in Sources */,
 				F5D7246C2971671200D52538 /* NavigationUtil.swift in Sources */,
 				F5D72464296FC1D000D52538 /* IndexContainer.swift in Sources */,
+				F5D7248E2979257D00D52538 /* LoadingView.swift in Sources */,
 				F5D72447296D8FAC00D52538 /* Carousel.swift in Sources */,
+				F5D724802976A74B00D52538 /* OldFriendPage.swift in Sources */,
+				F5D7247C29765DA900D52538 /* TextFieldStyles.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
