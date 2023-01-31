@@ -57,7 +57,6 @@ struct LoginPage: View {
                     Image("ic_arrowleft_default")
                 }
             }
-            
         }
     }
 }
@@ -79,12 +78,12 @@ struct LoginInputArea: View {
             
             VStack(alignment:.leading, spacing: 8) {
                 Text("一卡通MONEY登入ID").font(.system(size: 14))
-                TextField("一卡通MONEY登入ID", text: $ipassId, prompt: Text("請輸入"))
+                TextField("一卡通MONEY登入ID", text: $loginViewModel.ipassId, prompt: Text("請輸入"))
                     .textFieldStyle(UnderLineTextFieldStyle())
                     .padding(.bottom, 8)
                 
                 Text("密碼").font(.system(size: 14))
-                TextField("密碼", text: $ipassId, prompt: Text("六位數字"))
+                TextField("密碼", text: $loginViewModel.ipassPw, prompt: Text("六位數字"))
                     .textFieldStyle(UnderLineTextFieldStyle())
                     .padding(.bottom, 8)
                 

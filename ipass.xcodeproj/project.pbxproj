@@ -41,6 +41,16 @@
 		F5D7248A2977CE2900D52538 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D724892977CE2900D52538 /* LoginResponse.swift */; };
 		F5D7248C2977D17B00D52538 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D7248B2977D17B00D52538 /* LoginViewModel.swift */; };
 		F5D7248E2979257D00D52538 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D7248D2979257D00D52538 /* LoadingView.swift */; };
+		F5D7249029804DC700D52538 /* CheckTwIdResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D7248F29804DC700D52538 /* CheckTwIdResponse.swift */; };
+		F5D7249329876D7000D52538 /* AppDialogPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D7249229876D7000D52538 /* AppDialogPresentation.swift */; };
+		F5D724952987AFB200D52538 /* MessageDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D724942987AFB200D52538 /* MessageDialog.swift */; };
+		F5D724982988BCF700D52538 /* DialogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D724972988BCF700D52538 /* DialogView.swift */; };
+		F5D7249B2988C03500D52538 /* DialogBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D7249A2988C03500D52538 /* DialogBox.swift */; };
+		F5D7249D2988C21C00D52538 /* DialogTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D7249C2988C21C00D52538 /* DialogTitle.swift */; };
+		F5D7249F2988F0BB00D52538 /* DialogContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D7249E2988F0BB00D52538 /* DialogContent.swift */; };
+		F5D724A12988FD1500D52538 /* DialogOneBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D724A02988FD1500D52538 /* DialogOneBtn.swift */; };
+		F5D724A32989055200D52538 /* DialogTwoButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D724A22989055200D52538 /* DialogTwoButton.swift */; };
+		F5D724A529891B2100D52538 /* ConfirmDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D724A429891B2100D52538 /* ConfirmDialog.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +108,16 @@
 		F5D724892977CE2900D52538 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
 		F5D7248B2977D17B00D52538 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		F5D7248D2979257D00D52538 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		F5D7248F29804DC700D52538 /* CheckTwIdResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckTwIdResponse.swift; sourceTree = "<group>"; };
+		F5D7249229876D7000D52538 /* AppDialogPresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDialogPresentation.swift; path = ../../../../../../../Desktop/AppDialogPresentation.swift; sourceTree = "<group>"; };
+		F5D724942987AFB200D52538 /* MessageDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDialog.swift; sourceTree = "<group>"; };
+		F5D724972988BCF700D52538 /* DialogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogView.swift; sourceTree = "<group>"; };
+		F5D7249A2988C03500D52538 /* DialogBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogBox.swift; sourceTree = "<group>"; };
+		F5D7249C2988C21C00D52538 /* DialogTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogTitle.swift; sourceTree = "<group>"; };
+		F5D7249E2988F0BB00D52538 /* DialogContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogContent.swift; sourceTree = "<group>"; };
+		F5D724A02988FD1500D52538 /* DialogOneBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogOneBtn.swift; sourceTree = "<group>"; };
+		F5D724A22989055200D52538 /* DialogTwoButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogTwoButton.swift; sourceTree = "<group>"; };
+		F5D724A429891B2100D52538 /* ConfirmDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmDialog.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,7 +148,6 @@
 		F5D72401296D6EEC00D52538 = {
 			isa = PBXGroup;
 			children = (
-				F5D7248B2977D17B00D52538 /* LoginViewModel.swift */,
 				F5D7240C296D6EEC00D52538 /* ipass */,
 				F5D7241D296D6EED00D52538 /* ipassTests */,
 				F5D72427296D6EED00D52538 /* ipassUITests */,
@@ -189,6 +208,7 @@
 		F5D72443296D7E6F00D52538 /* components */ = {
 			isa = PBXGroup;
 			children = (
+				F5D7249129816DFF00D52538 /* dialog */,
 				F5D72462296FC1A300D52538 /* containers */,
 				F5D72444296D7E7C00D52538 /* PageView.swift */,
 				F5D72467296FEB5D00D52538 /* TopAppBar.swift */,
@@ -297,6 +317,7 @@
 		F5D724782976509000D52538 /* first */ = {
 			isa = PBXGroup;
 			children = (
+				F5D7248B2977D17B00D52538 /* LoginViewModel.swift */,
 				F5D72479297650A500D52538 /* LoginPage.swift */,
 				F5D7247F2976A74B00D52538 /* OldFriendPage.swift */,
 				F5D72481297787DA00D52538 /* LoginTwIdPage.swift */,
@@ -309,6 +330,7 @@
 			isa = PBXGroup;
 			children = (
 				F5D724892977CE2900D52538 /* LoginResponse.swift */,
+				F5D7248F29804DC700D52538 /* CheckTwIdResponse.swift */,
 			);
 			path = request;
 			sourceTree = "<group>";
@@ -318,6 +340,38 @@
 			children = (
 			);
 			path = response;
+			sourceTree = "<group>";
+		};
+		F5D7249129816DFF00D52538 /* dialog */ = {
+			isa = PBXGroup;
+			children = (
+				F5D724992988BD9000D52538 /* unit */,
+				F5D7249229876D7000D52538 /* AppDialogPresentation.swift */,
+				F5D724942987AFB200D52538 /* MessageDialog.swift */,
+				F5D724A429891B2100D52538 /* ConfirmDialog.swift */,
+			);
+			path = dialog;
+			sourceTree = "<group>";
+		};
+		F5D724962988BCA500D52538 /* box */ = {
+			isa = PBXGroup;
+			children = (
+				F5D7249A2988C03500D52538 /* DialogBox.swift */,
+				F5D7249C2988C21C00D52538 /* DialogTitle.swift */,
+				F5D7249E2988F0BB00D52538 /* DialogContent.swift */,
+				F5D724A02988FD1500D52538 /* DialogOneBtn.swift */,
+				F5D724A22989055200D52538 /* DialogTwoButton.swift */,
+			);
+			path = box;
+			sourceTree = "<group>";
+		};
+		F5D724992988BD9000D52538 /* unit */ = {
+			isa = PBXGroup;
+			children = (
+				F5D724962988BCA500D52538 /* box */,
+				F5D724972988BCF700D52538 /* DialogView.swift */,
+			);
+			path = unit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -454,9 +508,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5D724982988BCF700D52538 /* DialogView.swift in Sources */,
+				F5D7249B2988C03500D52538 /* DialogBox.swift in Sources */,
 				F5D72410296D6EEC00D52538 /* ContentView.swift in Sources */,
 				F5D72468296FEB5D00D52538 /* TopAppBar.swift in Sources */,
 				F5D7244E296EA9FA00D52538 /* HomePage.swift in Sources */,
+				F5D724952987AFB200D52538 /* MessageDialog.swift in Sources */,
+				F5D7249329876D7000D52538 /* AppDialogPresentation.swift in Sources */,
 				F5D7245D296ECABE00D52538 /* View.swift in Sources */,
 				F5D72466296FEB2500D52538 /* IPassCardPage.swift in Sources */,
 				F5D724762976447200D52538 /* AppViewModel.swift in Sources */,
@@ -465,17 +523,23 @@
 				F5D72460296FAE4700D52538 /* IndexBottomBar.swift in Sources */,
 				F5D7247A297650A500D52538 /* LoginPage.swift in Sources */,
 				F5D72457296EADE700D52538 /* ColorExt.swift in Sources */,
+				F5D7249D2988C21C00D52538 /* DialogTitle.swift in Sources */,
 				F5D7248A2977CE2900D52538 /* LoginResponse.swift in Sources */,
+				F5D7249F2988F0BB00D52538 /* DialogContent.swift in Sources */,
 				F5D724862977A69A00D52538 /* LoginOtpPage.swift in Sources */,
 				F5D7245B296EC36000D52538 /* HomeIcon.swift in Sources */,
 				F5D7240E296D6EEC00D52538 /* ipassApp.swift in Sources */,
 				F5D7247E2976893900D52538 /* ButtonStyles.swift in Sources */,
 				F5D7246A2971398900D52538 /* BannerPage.swift in Sources */,
+				F5D7249029804DC700D52538 /* CheckTwIdResponse.swift in Sources */,
 				F5D72473297642B100D52538 /* MainPage.swift in Sources */,
+				F5D724A12988FD1500D52538 /* DialogOneBtn.swift in Sources */,
 				F5D72450296EAA4500D52538 /* MyAccountCard.swift in Sources */,
 				F5D72471297553D500D52538 /* MainPageNavBar.swift in Sources */,
 				F5D7248C2977D17B00D52538 /* LoginViewModel.swift in Sources */,
 				F5D7244A296D90DE00D52538 /* User.swift in Sources */,
+				F5D724A529891B2100D52538 /* ConfirmDialog.swift in Sources */,
+				F5D724A32989055200D52538 /* DialogTwoButton.swift in Sources */,
 				F5D724842977A58A00D52538 /* StringExt.swift in Sources */,
 				F5D7246C2971671200D52538 /* NavigationUtil.swift in Sources */,
 				F5D72464296FC1D000D52538 /* IndexContainer.swift in Sources */,

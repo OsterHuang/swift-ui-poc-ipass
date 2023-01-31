@@ -11,13 +11,11 @@ struct LoginTwIdPage: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
     @ObservedObject var loginViewModel: LoginViewModel
-    @State var twId: String = ""
-    @State var twIdError: String = ""
     
-    @State var isInputOtpActived = false
+    @State var isInputOtpPassed = false
     
     private var _isNextEanbled: Bool {
-        return twId.count == 10
+        return loginViewModel.twId.count == 10
     }
     
     var body: some View {
@@ -25,8 +23,8 @@ struct LoginTwIdPage: View {
             Text("請輸入身分證字號 / 居留證統一證號")
                 .font(.system(size: 14))
                 .foregroundColor(Color.gray600)
-            TextField("密碼", text: $twId, prompt: Text("請輸入"))
-                .textFieldStyle(UnderLineTextFieldStyle(isError: !twIdError.isEmpty))
+            TextField("密碼", text: $loginViewModel.twId, prompt: Text("請輸入"))
+                .textFieldStyle(UnderLineTextFieldStyle(isError: !loginViewModel.twIdError.isEmpty))
                 .padding(.bottom, 8)
             
             Spacer()
@@ -75,21 +73,39 @@ struct LoginTwIdPage: View {
         NavigationLink(
             destination: LoginOtpPage(loginViewModel: loginViewModel),
 //            destination: LoginOtpPage(),
-            isActive: $isInputOtpActived
+            isActive: $isInputOtpPassed
         ) {
              EmptyView()
         }.hidden()
     }
     
-    private func next() {
-        twIdError = ""
+    private func validateFields() -> Bool {
+        loginViewModel.twIdError = ""
         
-        if (!twId.isTwId) {
-            twIdError = "格式錯誤"
-            return
+        if (!loginViewModel.twId.isTwId) {
+            loginViewModel.twIdError = "格式錯誤"
+            return false
         }
         
-        self.isInputOtpActived = true
+        return true
+    }
+    
+    private func next() {
+        if !validateFields() { return }
+            
+        Task {
+            let res = await loginViewModel.checkTwId()
+            if (res?.rtnCode == "0000") {
+                self.isInputOtpPassed = true
+            } else {
+                Alert(
+                    title: Text(res?.rtnMsg ?? "發生未知的錯誤"),
+                    message: Text("Great choice!"),
+                    dismissButton: .cancel()
+                )
+            }
+        }
+        
     }
     
 }

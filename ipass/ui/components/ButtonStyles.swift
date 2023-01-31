@@ -17,7 +17,7 @@ struct PrimaryButtonStyle: ButtonStyle {
             .background(isEnabled ? Color.green500 : Color.gray300)
             .foregroundColor(Color.white)
             .clipShape(RoundedCorner(radius: 10))
-            .scaleEffect(configuration.isPressed ? 1.1 : 1)
+            .scaleEffect(configuration.isPressed ? 1.05 : 1)
             .animation(.easeOut(duration: 0.2), value: configuration.isPressed)
     }
 }
@@ -34,7 +34,7 @@ struct SecondaryButtonStyle: ButtonStyle {
                     .stroke(Color.green500, lineWidth: 2)
             )
             .clipShape(RoundedCorner(radius: 10))
-            .scaleEffect(configuration.isPressed ? 1.1 : 1)
+            .scaleEffect(configuration.isPressed ? 1.05 : 1)
             .animation(.easeOut(duration: 0.2), value: configuration.isPressed)
     }
     
