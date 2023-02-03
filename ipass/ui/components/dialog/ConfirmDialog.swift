@@ -90,10 +90,9 @@ struct ConfirmDialog_Previews: PreviewProvider {
         ZStack {
             Button {
                 appDialogPresentation.showConfirmDialog(
-                    title: "請確認您是否已收到手機簡訊"
-                ) {
-                    appDialogPresentation.closeConfirmDialog()
-                }
+                    title: "請確認您是否已收到手機簡訊", onRightBtnClick:  {
+                        appDialogPresentation.closeConfirmDialog()
+                    })
             } label: {
                 Text("彈出來吧" + String(appDialogPresentation.isShowConfirmDialog))
             }

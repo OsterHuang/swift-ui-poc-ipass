@@ -10,6 +10,9 @@ import SwiftUI
 struct LoginOtpPage: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
+    @EnvironmentObject var appViewModel: AppViewModel
+    @EnvironmentObject var appDialogPresentation: AppDialogPresentation
+    
     @ObservedObject var loginViewModel: LoginViewModel
     @State var otpCode: String = "1234"
     
@@ -36,7 +39,7 @@ struct LoginOtpPage: View {
                 .padding(.bottom, 10)
             
             Button {
-                print(loginViewModel.loginResponse ?? " Nothing for sure")
+                self.inquirySmsOtp()
             } label: {
                 Text("重新取得驗證碼")
                     .font(.system(size: 12))
@@ -67,7 +70,6 @@ struct LoginOtpPage: View {
             ToolbarItem(placement: .navigationBarLeading) {
                 Button {
                     self.presentationMode.wrappedValue.dismiss()
-                    self.presentationMode.wrappedValue.dismiss()
                 } label: {
                     Image("ic_arrowleft_default")
                 }
@@ -84,6 +86,14 @@ struct LoginOtpPage: View {
             ToolbarItem(placement: .principal) {
                 Text("一卡通MONEY 登入")
             }
+        }
+    }
+    
+    func inquirySmsOtp() {
+        Task {
+            appViewModel.loadingCount += 1
+            let res = await loginViewModel.inquirySmsOtp()
+            appViewModel.loadingCount -= 1
         }
     }
     

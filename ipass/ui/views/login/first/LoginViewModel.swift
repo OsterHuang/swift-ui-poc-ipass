@@ -17,11 +17,9 @@ import Foundation
     @Published var twIdError = ""
     @Published var otpCode = ""
     var otpToken = ""
+    @Published var otpReceivedTime: Date? = nil
     
-    @Published var loginResponse: LoginResponse?
     @Published var isPopToLogin = false
-    @Published var isGoLoginTwId = false
-    @Published var isGoLoginOtp = false
     
     init() {
         print("Init \(self)")
@@ -39,8 +37,8 @@ import Foundation
             
             let (data, _) = try await URLSession.shared.data(for: request)
             let decoder = JSONDecoder()
-            self.loginResponse = try? decoder.decode(LoginResponse.self, from: data)
-            print(self.loginResponse ?? "")
+            let loginResponse = try? decoder.decode(LoginResponse.self, from: data)
+            print(loginResponse ?? "")
             
             return loginResponse
             
@@ -59,8 +57,36 @@ import Foundation
             
             let (data, _) = try await URLSession.shared.data(for: request)
             let decoder = JSONDecoder()
-            var res = try? decoder.decode(CheckTwIdResponse.self, from: data)
+            let res = try? decoder.decode(CheckTwIdResponse.self, from: data)
             print(res ?? " CheckTwIdResponse nothing ")
+            
+            return res
+            
+        } catch {
+            print(error)
+            
+            return nil
+        }
+    }
+    
+    func inquirySmsOtp() async -> InquiryOtpResponse? {
+        do {
+            var request = URLRequest(url: URL(string: "http://localhost:3000/api/auth/inquirySmsOtp")!)
+            request.httpMethod = "POST"
+            request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+            
+            let (data, _) = try await URLSession.shared.data(for: request)
+            let decoder = JSONDecoder()
+            let res = try? decoder.decode(InquiryOtpResponse.self, from: data)
+            print(res ?? " InquiryOtpResponse nothing ")
+            
+            if res?.rtnCode == "0000" {
+                self.otpReceivedTime = Date()
+                self.otpToken = res?.otpToken ?? ""
+            } else {
+                self.otpReceivedTime = nil
+                self.otpToken = ""
+            }
             
             return res
             
