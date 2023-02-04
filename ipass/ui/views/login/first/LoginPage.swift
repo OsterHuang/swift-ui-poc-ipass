@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct LoginPage: View {
-    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    @Environment(\.dismiss) var dismiss
     
     var body: some View {
         VStack(spacing: 8) {
@@ -52,7 +52,7 @@ struct LoginPage: View {
         .toolbar {
             ToolbarItem(placement: .navigationBarLeading) {
                 Button {
-                    self.presentationMode.wrappedValue.dismiss()
+                    dismiss()
                 } label: {
                     Image("ic_arrowleft_default")
                 }

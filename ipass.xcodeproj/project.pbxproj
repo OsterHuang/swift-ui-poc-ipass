@@ -11,6 +11,7 @@
 		F5B9C99C298CFC7E00F10CDF /* InquiryOtpResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B9C99B298CFC7E00F10CDF /* InquiryOtpResponse.swift */; };
 		F5B9C99F298D03E400F10CDF /* OtpSmsReceivedDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B9C99E298D03E400F10CDF /* OtpSmsReceivedDialog.swift */; };
 		F5B9C9A1298D129700F10CDF /* BindingExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B9C9A0298D129700F10CDF /* BindingExt.swift */; };
+		F5B9C9A4298E3B6200F10CDF /* NavigationStack in Frameworks */ = {isa = PBXBuildFile; productRef = F5B9C9A3298E3B6200F10CDF /* NavigationStack */; };
 		F5D7240E296D6EEC00D52538 /* ipassApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D7240D296D6EEC00D52538 /* ipassApp.swift */; };
 		F5D72410296D6EEC00D52538 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D7240F296D6EEC00D52538 /* ContentView.swift */; };
 		F5D72412296D6EED00D52538 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5D72411296D6EED00D52538 /* Assets.xcassets */; };
@@ -131,6 +132,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5B9C9A4298E3B6200F10CDF /* NavigationStack in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,6 +410,7 @@
 			);
 			name = ipass;
 			packageProductDependencies = (
+				F5B9C9A3298E3B6200F10CDF /* NavigationStack */,
 			);
 			productName = ipass;
 			productReference = F5D7240A296D6EEC00D52538 /* ipass.app */;
@@ -482,6 +485,7 @@
 			);
 			mainGroup = F5D72401296D6EEC00D52538;
 			packageReferences = (
+				F5B9C9A2298E3B6200F10CDF /* XCRemoteSwiftPackageReference "swiftui-navigation-stack" */,
 			);
 			productRefGroup = F5D7240B296D6EEC00D52538 /* Products */;
 			projectDirPath = "";
@@ -887,6 +891,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F5B9C9A2298E3B6200F10CDF /* XCRemoteSwiftPackageReference "swiftui-navigation-stack" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/matteopuc/swiftui-navigation-stack.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F5B9C9A3298E3B6200F10CDF /* NavigationStack */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F5B9C9A2298E3B6200F10CDF /* XCRemoteSwiftPackageReference "swiftui-navigation-stack" */;
+			productName = NavigationStack;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F5D72402296D6EEC00D52538 /* Project object */;
 }

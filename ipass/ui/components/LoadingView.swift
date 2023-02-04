@@ -33,7 +33,7 @@ struct LoadingView: View {
 }
 
 struct LoadingViewSample: View {
-    @StateObject var appViewModel: AppViewModel = AppViewModel(mainPageTabIndex: 3)
+    @StateObject var appViewModel: AppViewModel = AppViewModel(defaultTabIndex: 3)
     @State var name = ""
     
     var body: some View {

@@ -9,7 +9,7 @@ import SwiftUI
 
 
 struct ContentView: View {
-    @StateObject var appViewModel: AppViewModel = AppViewModel(mainPageTabIndex: 2)
+    @StateObject var appViewModel: AppViewModel = AppViewModel(defaultTabIndex: 2)
     @StateObject var appDialogPresentation = AppDialogPresentation()
 
     var body: some View {
@@ -17,12 +17,6 @@ struct ContentView: View {
         ZStack {
             NavigationView {
                 MainPage(tabIndex: $appViewModel.mainPageTabIndex)
-            }.onAppear {
-                let appearance = UINavigationBarAppearance()
-                appearance.configureWithOpaqueBackground()
-                appearance.shadowColor = nil // or a custom tint color
-                appearance.shadowImage = UIImage(named: "shadow")
-                UINavigationBar.appearance().standardAppearance = appearance
             }
                 .environmentObject(appViewModel) // Exposed to global environment object
                 .environmentObject(appDialogPresentation)

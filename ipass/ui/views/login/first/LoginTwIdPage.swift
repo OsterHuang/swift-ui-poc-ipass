@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct LoginTwIdPage: View {
-    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    @Environment(\.dismiss) var dismiss
     
     @EnvironmentObject var appViewModel: AppViewModel
     @EnvironmentObject var appDialogPresentation: AppDialogPresentation
@@ -55,14 +55,14 @@ struct LoginTwIdPage: View {
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
                     Button {
-                        self.presentationMode.wrappedValue.dismiss()
+                        dismiss()
                     } label: {
                         Image("ic_arrowleft_default")
                     }
                 }
                 ToolbarItem(placement: .primaryAction) {
                     Button {
-                        self.presentationMode.wrappedValue.dismiss()
+                        loginViewModel.backToLogin()
                     } label: {
                         Image("ic_close_default").resizable().frame(width: 24, height: 24)
                     }

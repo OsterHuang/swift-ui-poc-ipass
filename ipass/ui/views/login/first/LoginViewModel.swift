@@ -19,7 +19,7 @@ import Foundation
     var otpToken = ""
     @Published var otpReceivedTime: Date? = nil
     
-    @Published var isPopToLogin = false
+    @Published var isLoginPageNotActive = false
     
     init() {
         print("Init \(self)")
@@ -27,6 +27,10 @@ import Foundation
     
     deinit {
         print("deinit \(self)")
+    }
+    
+    func backToLogin() {
+        isLoginPageNotActive = true
     }
     
     func login() async -> LoginResponse? {
