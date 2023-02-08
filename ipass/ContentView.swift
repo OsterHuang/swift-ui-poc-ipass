@@ -26,6 +26,15 @@ struct ContentView: View {
             MessageDialog().environmentObject(appDialogPresentation)
             ConfirmDialog().environmentObject(appDialogPresentation)
         }
+        .onReceive(
+            appViewModel.$loadingCount.debounce(for: .milliseconds(10000), scheduler: DispatchQueue.main)
+        ) {value in
+            print("Watch loadingCount: \(value) over 10 second")
+            if value == 0 { return }
+            print("Stop loading.")
+            
+            appViewModel.loadingCount = 0
+        }
             
     }
 }

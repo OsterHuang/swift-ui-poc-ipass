@@ -58,6 +58,9 @@ struct LoginPage: View {
                 }
             }
         }
+        .onAppear {
+            UINavigationBar.setAnimationsEnabled(true)
+        }
     }
 }
 

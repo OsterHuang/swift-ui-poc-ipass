@@ -11,6 +11,7 @@
 		F5B9C99C298CFC7E00F10CDF /* InquiryOtpResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B9C99B298CFC7E00F10CDF /* InquiryOtpResponse.swift */; };
 		F5B9C99F298D03E400F10CDF /* OtpSmsReceivedDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B9C99E298D03E400F10CDF /* OtpSmsReceivedDialog.swift */; };
 		F5B9C9A1298D129700F10CDF /* BindingExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B9C9A0298D129700F10CDF /* BindingExt.swift */; };
+		F5CC620B29922AFB00D1739C /* IntervalExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CC620A29922AFB00D1739C /* IntervalExt.swift */; };
 		F5D7240E296D6EEC00D52538 /* ipassApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D7240D296D6EEC00D52538 /* ipassApp.swift */; };
 		F5D72410296D6EEC00D52538 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D7240F296D6EEC00D52538 /* ContentView.swift */; };
 		F5D72412296D6EED00D52538 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5D72411296D6EED00D52538 /* Assets.xcassets */; };
@@ -78,6 +79,7 @@
 		F5B9C99B298CFC7E00F10CDF /* InquiryOtpResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InquiryOtpResponse.swift; sourceTree = "<group>"; };
 		F5B9C99E298D03E400F10CDF /* OtpSmsReceivedDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtpSmsReceivedDialog.swift; sourceTree = "<group>"; };
 		F5B9C9A0298D129700F10CDF /* BindingExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingExt.swift; sourceTree = "<group>"; };
+		F5CC620A29922AFB00D1739C /* IntervalExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervalExt.swift; sourceTree = "<group>"; };
 		F5D7240A296D6EEC00D52538 /* ipass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ipass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5D7240D296D6EEC00D52538 /* ipassApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ipassApp.swift; sourceTree = "<group>"; };
 		F5D7240F296D6EEC00D52538 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -283,6 +285,7 @@
 		F5D72455296EADD300D52538 /* extension */ = {
 			isa = PBXGroup;
 			children = (
+				F5CC620A29922AFB00D1739C /* IntervalExt.swift */,
 				F5D72456296EADE700D52538 /* ColorExt.swift */,
 				F5D7245C296ECABE00D52538 /* View.swift */,
 				F5D724832977A58A00D52538 /* StringExt.swift */,
@@ -537,6 +540,7 @@
 				F5D72482297787DA00D52538 /* LoginTwIdPage.swift in Sources */,
 				F5D72445296D7E7C00D52538 /* PageView.swift in Sources */,
 				F5B9C9A1298D129700F10CDF /* BindingExt.swift in Sources */,
+				F5CC620B29922AFB00D1739C /* IntervalExt.swift in Sources */,
 				F5D72460296FAE4700D52538 /* IndexBottomBar.swift in Sources */,
 				F5D7247A297650A500D52538 /* LoginPage.swift in Sources */,
 				F5D72457296EADE700D52538 /* ColorExt.swift in Sources */,
